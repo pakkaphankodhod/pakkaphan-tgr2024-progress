@@ -1,15 +1,21 @@
-# Welcome to Pakkaphan Permvanitkul TGR2024 Progress Book
+# Pakkaphan Permvanitkul TGR2024 Progress Book
 
 ## Server-Site overviews
 
 ![infra](assets/infrastructure-overview.jpg)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+### Components (Thanks to P'luk mhee for the overview guideline)
+#### Fast-Api (Back-end)<br>
+`Uvicorn` - Uvicorn is an ASGI-compliant, lightning-fast web server that runs your FastAPI application. It acts as the interface between the ASGI framework (FastAPI) and the client (browser, API client, etc.).<br><br>
+`ASGI (Asynchronous Server Gateway Interface)` - allows applications like FastAPI to handle both synchronous and asynchronous operations, meaning you can handle long-running tasks like WebSockets, background tasks, and other I/O-bound operations without blocking other requests.<br><br>
 
-## Project layout
+#### Chart.js (Front-end via ws://)<br>
+
+
+#### Database<br>
+   
+
+## Docker-compose.yml
 
     mkdocs.yml    # The configuration file.
     docs/
